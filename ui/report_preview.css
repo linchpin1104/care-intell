@@ -102,8 +102,15 @@ body {
   text-align: center;
   margin: -40px -36px 0 -36px;
   padding: 24px 0 16px 0;
-  background: linear-gradient(135deg, #FFE500 0%, #FFD700 100%);
   border-radius: 32px 32px 0 0;
+}
+
+.parent-card .card-logo {
+  background: linear-gradient(135deg, #FFE500 0%, #FFD700 100%);
+}
+
+.teacher-card .card-logo {
+  background: linear-gradient(135deg, #87CEEB 0%, #5DADE2 100%);
 }
 
 .card-logo-img {
@@ -118,10 +125,18 @@ body {
   color: #2D2D2D;
   text-align: center;
   padding: 16px 24px;
-  background: linear-gradient(135deg, #FFE500 0%, #FFD700 100%);
   margin: 0 -36px 24px -36px;
-  border-bottom: 4px solid #FFD700;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.parent-card .card-main-title {
+  background: linear-gradient(135deg, #FFE500 0%, #FFD700 100%);
+  border-bottom: 4px solid #FFD700;
+}
+
+.teacher-card .card-main-title {
+  background: linear-gradient(135deg, #87CEEB 0%, #5DADE2 100%);
+  border-bottom: 4px solid #5DADE2;
 }
 
 @media (max-width: 768px) {
@@ -168,7 +183,7 @@ body {
   }
 }
 
-.report-card::before {
+.report-card.parent-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -178,9 +193,24 @@ body {
   background: linear-gradient(90deg, #FFE500 0%, #FFD700 100%);
 }
 
-.report-card:hover {
+.report-card.teacher-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(90deg, #87CEEB 0%, #5DADE2 100%);
+}
+
+.report-card.parent-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 28px 80px rgba(255, 229, 0, 0.2);
+}
+
+.report-card.teacher-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 80px rgba(135, 206, 235, 0.2);
 }
 
 
@@ -190,7 +220,14 @@ body {
   align-items: center;
   gap: 16px;
   padding-bottom: 20px;
+}
+
+.parent-card .report-header {
   border-bottom: 3px solid #FFE500;
+}
+
+.teacher-card .report-header {
+  border-bottom: 3px solid #87CEEB;
 }
 
 @media (max-width: 768px) {
@@ -236,12 +273,21 @@ body {
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #FFE500 0%, #FFD700 100%);
   color: #2D2D2D;
-  box-shadow: 0 4px 12px rgba(255, 229, 0, 0.4);
-  border: 2px solid #FFD700;
   white-space: nowrap;
   flex-shrink: 0;
+}
+
+.parent-card .report-badge {
+  background: linear-gradient(135deg, #FFE500 0%, #FFD700 100%);
+  box-shadow: 0 4px 12px rgba(255, 229, 0, 0.4);
+  border: 2px solid #FFD700;
+}
+
+.teacher-card .report-badge {
+  background: linear-gradient(135deg, #87CEEB 0%, #5DADE2 100%);
+  box-shadow: 0 4px 12px rgba(135, 206, 235, 0.4);
+  border: 2px solid #5DADE2;
 }
 
 @media (max-width: 768px) {
@@ -398,13 +444,21 @@ body {
   font-size: 16px;
   margin: 8px 0;
   padding-left: 14px;
-  border-left: 4px solid #FFE500;
   color: #475569;
   line-height: 1.7;
   font-style: italic;
-  background: linear-gradient(90deg, rgba(255, 229, 0, 0.1) 0%, transparent 100%);
   padding: 10px 16px;
   border-radius: 0 8px 8px 0;
+}
+
+.parent-card .episode-quote {
+  border-left: 4px solid #FFE500;
+  background: linear-gradient(90deg, rgba(255, 229, 0, 0.1) 0%, transparent 100%);
+}
+
+.teacher-card .episode-quote {
+  border-left: 4px solid #87CEEB;
+  background: linear-gradient(90deg, rgba(135, 206, 235, 0.1) 0%, transparent 100%);
 }
 
 .episode-body {
@@ -606,7 +660,7 @@ body {
   list-style: none;
 }
 
-.question-list li {
+.parent-card .question-list li {
   margin-bottom: 14px;
   padding: 16px 20px;
   background: linear-gradient(135deg, #FFFEF5 0%, #FFF9E6 100%);
@@ -615,6 +669,17 @@ body {
   line-height: 1.7;
   color: #475569;
   box-shadow: 0 2px 8px rgba(255, 229, 0, 0.15);
+}
+
+.teacher-card .question-list li {
+  margin-bottom: 14px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #F0F8FF 0%, #E6F7FF 100%);
+  border-radius: 12px;
+  border-left: 5px solid #87CEEB;
+  line-height: 1.7;
+  color: #475569;
+  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.15);
 }
 
 @media (max-width: 768px) {
