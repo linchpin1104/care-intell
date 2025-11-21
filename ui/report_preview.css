@@ -525,17 +525,54 @@ body {
   font-size: 16px;
   border-radius: 16px;
   padding: 18px;
+  padding-top: 50px;
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   border: 2px solid transparent;
   transition: all 0.2s ease;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+}
+
+.traffic-status-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.badge-green {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.badge-yellow {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+}
+
+.badge-red {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
 }
 
 @media (max-width: 768px) {
   .traffic-item {
     padding: 14px;
+    padding-top: 45px;
     font-size: 15px;
+  }
+  
+  .traffic-status-badge {
+    font-size: 13px;
+    padding: 7px 16px;
+    top: -10px;
   }
   
   .traffic-label {
