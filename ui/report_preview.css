@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -5,12 +9,19 @@ body {
   background: linear-gradient(180deg, #FFF9E6 0%, #FFFBF0 100%);
   color: #222;
   min-height: 100vh;
+  -webkit-text-size-adjust: 100%;
 }
 
 .page {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 24px 60px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 20px 16px 40px;
+  }
 }
 
 .page-header {
@@ -59,6 +70,22 @@ body {
   line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  .page-header {
+    padding: 24px 20px;
+    margin-bottom: 32px;
+    border-radius: 20px;
+  }
+  
+  .page-title {
+    font-size: 28px;
+  }
+  
+  .page-subtitle {
+    font-size: 15px;
+  }
+}
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -91,6 +118,25 @@ body {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 768px) {
+  .card-logo {
+    margin: -24px -20px 0 -20px;
+    padding: 16px 0 12px 0;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card-logo-img {
+    height: 60px;
+  }
+  
+  .card-main-title {
+    font-size: 22px;
+    padding: 12px 16px;
+    margin: 0 -20px 20px -20px;
+    border-bottom: 3px solid #FFD700;
+  }
+}
+
 .report-card {
   background: #ffffff;
   border-radius: 32px;
@@ -102,6 +148,18 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .report-card {
+    border-radius: 20px;
+    padding: 24px 20px 28px;
+    gap: 20px;
+  }
+  
+  .report-card:hover {
+    transform: none;
+  }
 }
 
 .report-card::before {
@@ -143,6 +201,16 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  .report-title {
+    font-size: 22px;
+  }
+  
+  .report-subtitle {
+    font-size: 14px;
+  }
+}
+
 .report-badge {
   padding: 10px 20px;
   border-radius: 999px;
@@ -182,6 +250,16 @@ body {
   filter: drop-shadow(0 2px 4px rgba(255, 229, 0, 0.3));
 }
 
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 18px;
+  }
+  
+  .section-title span.emoji {
+    font-size: 22px;
+  }
+}
+
 .meta-list {
   font-size: 15px;
   color: #475569;
@@ -195,6 +273,17 @@ body {
   margin-bottom: 8px;
   padding-left: 24px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .meta-list {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .meta-list li {
+    margin-bottom: 7px;
+  }
 }
 
 .meta-list li::before {
@@ -290,6 +379,21 @@ body {
   line-height: 1.7;
 }
 
+@media (max-width: 768px) {
+  .episode-title {
+    font-size: 15px;
+  }
+  
+  .episode-quote {
+    font-size: 14px;
+    padding: 9px 14px;
+  }
+  
+  .episode-body {
+    font-size: 14px;
+  }
+}
+
 .dev-block {
   font-size: 15px;
   color: #475569;
@@ -308,6 +412,16 @@ body {
   margin-bottom: 6px;
 }
 
+@media (max-width: 768px) {
+  .dev-block {
+    font-size: 14px;
+  }
+  
+  .dev-label {
+    font-size: 15px;
+  }
+}
+
 .traffic-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -324,6 +438,13 @@ body {
   transition: all 0.2s ease;
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .traffic-item {
+    padding: 14px;
+    font-size: 13px;
+  }
 }
 
 .traffic-item::before {
@@ -440,6 +561,17 @@ body {
   line-height: 1.7;
   color: #475569;
   box-shadow: 0 2px 8px rgba(255, 229, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .question-list {
+    font-size: 14px;
+  }
+  
+  .question-list li {
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
 }
 
 
