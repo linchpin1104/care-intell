@@ -289,7 +289,7 @@ body {
 }
 
 .meta-list {
-  font-size: 15px;
+  font-size: 17px;
   color: #475569;
   list-style: none;
   padding-left: 0;
@@ -305,7 +305,7 @@ body {
 
 @media (max-width: 768px) {
   .meta-list {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
   }
   
@@ -329,7 +329,7 @@ body {
 }
 
 .pill {
-  font-size: 13px;
+  font-size: 15px;
   padding: 6px 14px;
   border-radius: 999px;
   background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
@@ -341,7 +341,7 @@ body {
 
 @media (max-width: 768px) {
   .pill {
-    font-size: 12px;
+    font-size: 14px;
     padding: 5px 12px;
   }
 }
@@ -395,7 +395,7 @@ body {
 }
 
 .episode-quote {
-  font-size: 14px;
+  font-size: 16px;
   margin: 8px 0;
   padding-left: 14px;
   border-left: 4px solid #FFE500;
@@ -408,7 +408,7 @@ body {
 }
 
 .episode-body {
-  font-size: 15px;
+  font-size: 17px;
   color: #475569;
   margin-top: 8px;
   line-height: 1.7;
@@ -421,19 +421,19 @@ body {
   }
   
   .episode-quote {
-    font-size: 13px;
+    font-size: 15px;
     padding: 8px 12px;
     line-height: 1.6;
   }
   
   .episode-body {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.65;
   }
 }
 
 .dev-block {
-  font-size: 15px;
+  font-size: 17px;
   color: #475569;
   line-height: 1.7;
 }
@@ -445,18 +445,18 @@ body {
 .dev-label {
   font-weight: 700;
   color: #1e293b;
-  font-size: 16px;
+  font-size: 18px;
   display: inline-block;
   margin-bottom: 6px;
 }
 
 @media (max-width: 768px) {
   .dev-block {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .dev-label {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -468,7 +468,7 @@ body {
 }
 
 .traffic-item {
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 16px;
   padding: 18px;
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
@@ -481,11 +481,11 @@ body {
 @media (max-width: 768px) {
   .traffic-item {
     padding: 14px;
-    font-size: 13px;
+    font-size: 15px;
   }
   
   .traffic-label {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .traffic-grid {
@@ -531,7 +531,7 @@ body {
 
 .traffic-label {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -588,19 +588,19 @@ body {
 }
 
 .small {
-  font-size: 14px;
+  font-size: 16px;
   color: #4b5563;
   line-height: 1.6;
 }
 
 @media (max-width: 768px) {
   .small {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
 .question-list {
-  font-size: 15px;
+  font-size: 17px;
   padding-left: 0;
   margin: 8px 0 0;
   list-style: none;
@@ -619,7 +619,7 @@ body {
 
 @media (max-width: 768px) {
   .question-list {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .question-list li {
