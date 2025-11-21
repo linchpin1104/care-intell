@@ -1,0 +1,170 @@
+{
+  "meta_info": {
+    "date": "20251017",
+    "teacher_name": "이민정",
+    "child_name": "김준우",
+    "child_age": "만4세",
+    "duration": "만4세",
+    "session_name": "20251017-이민정교사-김준우-만4세-02_00_48-65kbps_mono"
+  },
+  "speech_ratio": {
+    "child_speech_ratio": 54.97572815533981,
+    "child_utterance_count": 1812,
+    "teacher_utterance_count": 1484,
+    "total_utterance_count": 3296,
+    "child_words": 31077,
+    "teacher_words": 22830,
+    "total_words": 53907,
+    "child_word_ratio": 57.64928487951472
+  },
+  "child_speech_amount": {
+    "total_utterances": 1812,
+    "total_characters": 31077,
+    "avg_utterance_length": 17.15066225165563,
+    "longest_utterance": 3688,
+    "shortest_utterance": 1,
+    "utterance_length_std": 173.6775572980098
+  },
+  "emotion_analysis": {
+    "positive_count": 290,
+    "negative_count": 218,
+    "positive_ratio": 57.08661417322835,
+    "negative_ratio": 42.91338582677165,
+    "positive_keywords": [
+      "네",
+      "예쁘",
+      "좋아",
+      "좋다",
+      "웃",
+      "그래",
+      "괜찮",
+      "우와",
+      "와",
+      "재밌",
+      "응",
+      "신기",
+      "히히",
+      "하하"
+    ],
+    "negative_keywords": [
+      "아니",
+      "싫",
+      "무서",
+      "힘들",
+      "우"
+    ],
+    "emotion_balance": "positive"
+  },
+  "topic_keywords": {
+    "top_keywords": [
+      [
+        "콜콜",
+        689
+      ],
+      [
+        "빡빡",
+        65
+      ],
+      [
+        "진짜",
+        53
+      ],
+      [
+        "슈우",
+        50
+      ],
+      [
+        "여기",
+        48
+      ],
+      [
+        "주사기",
+        48
+      ],
+      [
+        "잘한다",
+        45
+      ],
+      [
+        "아니",
+        42
+      ],
+      [
+        "아니야",
+        37
+      ],
+      [
+        "보리",
+        35
+      ],
+      [
+        "준비",
+        33
+      ],
+      [
+        "선생님",
+        29
+      ],
+      [
+        "수바요",
+        29
+      ],
+      [
+        "야구",
+        29
+      ],
+      [
+        "우와",
+        28
+      ],
+      [
+        "그러면",
+        21
+      ],
+      [
+        "여섯",
+        20
+      ],
+      [
+        "얘네",
+        18
+      ],
+      [
+        "시작",
+        17
+      ],
+      [
+        "육개",
+        17
+      ]
+    ],
+    "unique_words": 896,
+    "total_words": 3112
+  },
+  "problem_solving": {
+    "problem_solving_count": 84,
+    "problem_solving_ratio": 4.635761589403973,
+    "examples": [
+      "왜 안 나오지?",
+      "이게 저거 세 번인데 이거 이렇게 누르면.",
+      "이렇게 하면 출동 출동.",
+      "이렇게 한 다음에.",
+      "어, 왜 허수아비가 왜 옷을 안 입고 있어?"
+    ]
+  },
+  "topic_continuity": {
+    "avg_continuity": 0,
+    "continuity_std": 0,
+    "total_segments": 1,
+    "topic_changes": 0
+  },
+  "turn_taking": {
+    "total_turns": 2105,
+    "child_turns": 1052,
+    "teacher_turns": 1053,
+    "avg_child_turn_length": 1.7224334600760456,
+    "avg_teacher_turn_length": 1.409306742640076,
+    "turn_taking_balance": 0.4997624703087886
+  },
+  "analyzed_at": "2025-11-14T17:35:14.938564"
+}

@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "date": "20251017",
+    "teacher": "이민정",
+    "child": "김준우",
+    "age": "만4세",
+    "duration": "02_00_48"
+  },
+  "metrics": {
+    "child_utterance_ratio": 0.5270063043107854,
+    "child_utterance_count": 3093,
+    "teacher_utterance_count": 2776,
+    "total_utterance_count": 5869,
+    "child_word_count": 10751,
+    "teacher_word_count": 10577,
+    "child_avg_words_per_utterance": 3.4759133527319754,
+    "child_speaking_duration": 104800.7,
+    "teacher_speaking_duration": 28307.5,
+    "total_session_duration": 645.0,
+    "child_speaking_ratio": 162.4817054263566,
+    "topic_persistence": 3.8091133004926108,
+    "context_switches": {
+      "total_switches": 827,
+      "switches_per_minute": 49620.0,
+      "topic_distribution": {
+        "기타": 5007,
+        "놀이": 86,
+        "일상": 301,
+        "질문": 363,
+        "감정": 94,
+        "가족": 68
+      }
+    },
+    "problem_solving_utterances": {
+      "child_count": 92,
+      "teacher_count": 165,
+      "child_examples": [
+        "다시 씨.",
+        "다시 씨.",
+        "이거 왜 안 들어가요?",
+        "이거 왜 안 들어가요?",
+        "왜 안 들어가요?"
+      ],
+      "teacher_examples": [
+        "어떤 걸 만들면 좋을까요?",
+        "어떤 걸 만들면 좋을까요?",
+        "토토가 왜 이렇게 빨리 빨리 토토 살려줘.",
+        "토토가 왜 이렇게 빨리 빨리 토토 살려줘.",
+        "너는 왜 이렇게 고칠 게 많아? 하루 정도 걸리겠어."
+      ]
+    },
+    "positive_utterances": 106,
+    "negative_utterances": 187,
+    "positive_negative_ratio": 0.5668449197860963,
+    "emotion_keywords": {
+      "positive": [
+        [
+          "우와",
+          38
+        ],
+        [
+          "웃",
+          30
+        ],
+        [
+          "예쁘",
+          14
+        ],
+        [
+          "좋아",
+          14
+        ],
+        [
+          "야호",
+          8
+        ],
+        [
+          "재밌",
+          4
+        ]
+      ],
+      "negative": [
+        [
+          "아니",
+          151
+        ],
+        [
+          "싫어",
+          12
+        ],
+        [
+          "못",
+          6
+        ],
+        [
+          "무서",
+          6
+        ],
+        [
+          "어려",
+          4
+        ],
+        [
+          "안해",
+          2
+        ],
+        [
+          "힘들",
+          2
+        ],
+        [
+          "그만",
+          2
+        ],
+        [
+          "슬프",
+          2
+        ]
+      ]
+    },
+    "main_topics": [
+      [
+        "콜콜",
+        699
+      ],
+      [
+        "아니",
+        83
+      ],
+      [
+        "아니야",
+        72
+      ],
+      [
+        "빡빡",
+        66
+      ],
+      [
+        "진짜",
+        63
+      ],
+      [
+        "보리",
+        62
+      ],
+      [
+        "주사기",
+        61
+      ],
+      [
+        "야구",
+        58
+      ],
+      [
+        "우와",
+        52
+      ],
+      [
+        "슈우",
+        52
+      ],
+      [
+        "잘한다",
+        47
+      ],
+      [
+        "준비",
+        45
+      ],
+      [
+        "이렇게",
+        42
+      ],
+      [
+        "그러면",
+        42
+      ],
+      [
+        "얘네",
+        36
+      ],
+      [
+        "여섯",
+        34
+      ],
+      [
+        "시작",
+        34
+      ],
+      [
+        "수바요",
+        33
+      ],
+      [
+        "주사위",
+        32
+      ],
+      [
+        "하나",
+        32
+      ]
+    ],
+    "time_segments": [
+      {
+        "segment_number": 1,
+        "start_time": "00:00",
+        "end_time": "10:00",
+        "total_utterances": 5838,
+        "child_utterances": 3079,
+        "teacher_utterances": 2759,
+        "child_ratio": 0.5274066461116821
+      },
+      {
+        "segment_number": 2,
+        "start_time": "10:00",
+        "end_time": "20:00",
+        "total_utterances": 31,
+        "child_utterances": 14,
+        "teacher_utterances": 17,
+        "child_ratio": 0.45161290322580644
+      }
+    ]
+  },
+  "timestamp": "2025-11-14T18:35:06.610960"
+}

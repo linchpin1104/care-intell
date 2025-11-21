@@ -1,0 +1,153 @@
+{
+  "session_metadata": {
+    "session_id": "20251017-이민정교사-김준우-만4세-02_00_48-65kbps_mono",
+    "date": "2025-10-17",
+    "child_name": "김준우",
+    "child_age": "만4세",
+    "teacher_name": "이민정",
+    "duration_minutes": 120
+  },
+  "interaction_metrics": {
+    "child_utterance_ratio": 52.0,
+    "teacher_utterance_ratio": 48.0,
+    "child_total_utterances": 1813,
+    "teacher_total_utterances": 1670,
+    "child_avg_utterance_length": 5.0,
+    "teacher_avg_utterance_length": 6.5,
+    "child_positive_utterances": 40,
+    "child_negative_utterances": 25,
+    "teacher_positive_utterances": 85,
+    "teacher_negative_utterances": 15,
+    "positivity_balance_child": 0.615,
+    "positivity_balance_teacher": 0.85
+  },
+  "audio_features": {
+    "raw": {
+      "vad_ratio": 0.5237726807175996,
+      "snr": 14.720934867858887,
+      "clipping_ratio": 0.0,
+      "rms_mean": 0.03464294597506523,
+      "rms_var": 0.0008744765073060989,
+      "low_band_energy": 25553374.0,
+      "mid_band_energy": 205358000.0,
+      "high_band_energy": 35863224.0,
+      "speech_rate_frames": 43.066669636984344,
+      "f0_mean": 345.6149612397955,
+      "f0_range": 2027.5981310796394
+    },
+    "interpreted": {
+      "energy_level": "활발함",
+      "speech_rate_category": "빠름",
+      "pitch_variability": "풍부함",
+      "recording_quality": "좋음"
+    }
+  },
+  "core_episodes": [
+    {
+      "episode_id": "ep1_language",
+      "developmental_area": "언어발달",
+      "title": "🎲 \"주사기? 아니, 주사위!\"",
+      "time_range": "10:00-12:00",
+      "dialogue_excerpt": [
+        { "speaker": "child", "text": "이거 주사기가 있네." },
+        { "speaker": "teacher", "text": "주사위! 주사기는 이거." },
+        { "speaker": "child", "text": "주사위 맞아, 주사위네." }
+      ],
+      "developmental_significance": "발음이 비슷한 단어를 혼동한 뒤, 교사의 설명을 받아들이고 바로 올바른 표현을 사용하면서 어휘 학습에 대한 개방성과 빠른 흡수력을 보여준 장면."
+    },
+    {
+      "episode_id": "ep2_social_emotional",
+      "developmental_area": "사회정서발달",
+      "title": "👻 \"괴물이 놓고 갔어\"",
+      "time_range": "10:00-12:00",
+      "dialogue_excerpt": [
+        { "speaker": "teacher", "text": "주사위가 여기 왜 있지?" },
+        { "speaker": "child", "text": "누가 놓고 간 거 같아." },
+        { "speaker": "child", "text": "괴물이 놓고 갔어. 유령이 놓고 갔어. 세상에, 무섭지 않아?" }
+      ],
+      "developmental_significance": "현실의 사물(주사위)에 상상 속 존재(괴물, 유령)를 연결하고, 교사에게 '무섭지 않아?'라고 물으며 타인의 감정을 탐색하는 모습에서 상상력과 감정 이해 능력이 함께 드러난 장면."
+    },
+    {
+      "episode_id": "ep3_cognitive",
+      "developmental_area": "인지발달",
+      "title": "🚗 \"9점까지 해서 이기는 사람이 1등이야\"",
+      "time_range": "50:00-90:00",
+      "dialogue_excerpt": [
+        { "speaker": "child", "text": "9점까지 해서 이기는 사람이 1등이야." },
+        { "speaker": "child", "text": "우리 이번엔 세 대씩 하자." },
+        { "speaker": "child", "text": "미안. 사고 싶은데 어, 저기서 골라요." }
+      ],
+      "developmental_significance": "점수와 분배 개념을 이해하고 스스로 규칙을 만들며, 자동차가 부족한 상황에서 대안을 제시해 공정성과 문제 해결 능력을 함께 보여준 장면."
+    }
+  ],
+  "language_development": {
+    "summary": "준우는 또래보다 조금 더 긴 문장과 다양한 문법 구조를 사용하며, 새로운 단어를 빠르게 받아들이고 활용할 수 있는 언어 능력을 보였습니다.",
+    "examples": [
+      "\"외할아버지 안동에 있는 할아버지가 있다\"처럼 장소와 관계를 함께 표현하는 문장을 사용함.",
+      "\"선생님 사실 한 번도 본 적은 없지만, 만약에 보면 무서울 것 같아\"와 같이 가정법과 복합 시제를 자연스럽게 구사함.",
+      "\"트랙을 천천히 달려주세요\"처럼 정중한 요청문을 상황에 맞게 사용함."
+    ]
+  },
+  "cognitive_development": {
+    "summary": "수 개념, 규칙 이해, 문제 해결 능력이 고르게 발달해 있으며, 놀이 규칙을 스스로 설계하고 조정하는 모습을 보였습니다.",
+    "examples": [
+      "\"9점까지 해서 이기는 사람이 1등이야\"라고 제안하며 조건-결과 관계를 이해함.",
+      "\"세 대씩\", \"두 대씩\" 등 분배 개념을 사용하여 공정한 규칙을 만들려 함.",
+      "자동차가 부족할 때 \"저기서 골라요\"라고 말하며 대안을 제안하는 문제 해결을 보여줌."
+    ]
+  },
+  "social_emotional_development": {
+    "summary": "협력과 배려, 공감 능력이 잘 나타나며, 다양한 감정을 언어로 표현할 수 있습니다.",
+    "examples": [
+      "\"우리 세 대씩 하자\"라고 제안하며 함께하는 규칙을 만들고, 선생님 몫의 자동차도 챙겨 줌.",
+      "게임 중 \"미안\"이라고 말하며 실수에 대해 사과하고 상황을 바로잡으려 함.",
+      "\"무섭지 않아?\"라고 묻고 \"선생님은 조금 무서워\"라고 말하며 타인의 감정을 상상해 봄."
+    ]
+  },
+  "play_analysis": {
+    "primary_themes": [
+      {
+        "theme": "경찰놀이와 괴물·유령 상상놀이",
+        "description": "초반에는 사이렌을 울리고 사건을 만드는 등 상상과 역할이 섞인 놀이를 주도적으로 이끌었습니다.",
+        "engagement": "높음"
+      },
+      {
+        "theme": "토끼(토토) 역할놀이와 만들기",
+        "description": "중반에는 토끼 캐릭터와 함께 이야기하며 감정과 행동을 길게 설명하는 역할놀이를 즐겼습니다.",
+        "engagement": "높음"
+      },
+      {
+        "theme": "자동차 레이싱 규칙놀이",
+        "description": "후반에는 주사위와 자동차를 활용한 레이싱 게임에 60분 이상 몰입하며 규칙을 만들고 조정했습니다.",
+        "engagement": "매우 높음"
+      }
+    ],
+    "play_quality_ratings": {
+      "engagement": {
+        "score": 5,
+        "criteria": "한 가지 놀이에 45분 이상 깊이 집중할 때 최고 수준으로 평가",
+        "evidence": "자동차 레이싱 놀이를 60분 이상 지속하며 스스로 규칙을 만들어가며 놀았다."
+      },
+      "creativity": {
+        "score": 5,
+        "criteria": "놀이 규칙과 상황을 새롭게 만들고 변형할 때 높은 점수",
+        "evidence": "천천히만 달리는 레이스, 정비소 설정 등 새로운 규칙을 자주 제안했다."
+      },
+      "cooperation": {
+        "score": 4,
+        "criteria": "함께 규칙을 정하고 타인을 배려하는 모습이 자주 관찰될 때 높은 점수",
+        "evidence": "자동차를 공평하게 나누고, 선생님이 불리할 때 더 고르게 해주는 배려를 보였다."
+      },
+      "persistence": {
+        "score": 5,
+        "criteria": "어려운 상황에서도 포기하지 않고 여러 방법을 시도할 때 높은 점수",
+        "evidence": "게임에서 지거나 규칙이 복잡해져도 놀이를 멈추지 않고 계속 방법을 바꾸며 도전했다."
+      }
+    }
+  }
+}
+
+
+
+
+

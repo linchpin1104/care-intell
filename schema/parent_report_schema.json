@@ -1,0 +1,301 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "부모용 레포트 스키마",
+  "description": "놀이 세션 분석 후 부모에게 전달되는 레포트의 구조화된 데이터",
+  "type": "object",
+  "required": [
+    "session_metadata",
+    "summary_stats",
+    "core_episodes",
+    "language_development",
+    "cognitive_development",
+    "social_emotional_development",
+    "play_analysis",
+    "conversation_starters"
+  ],
+  "properties": {
+    "session_metadata": {
+      "type": "object",
+      "properties": {
+        "session_id": {"type": "string"},
+        "date": {"type": "string", "format": "date"},
+        "child_name": {"type": "string"},
+        "child_age": {"type": "string"},
+        "teacher_name": {"type": "string"},
+        "duration_minutes": {"type": "integer"}
+      },
+      "required": ["session_id", "date", "child_name", "child_age", "teacher_name", "duration_minutes"]
+    },
+
+    "summary_stats": {
+      "description": "초반에 보여줄 간단한 통계 (음성분석 포함)",
+      "type": "object",
+      "properties": {
+        "play_duration": {
+          "type": "object",
+          "properties": {
+            "total_minutes": {"type": "integer"},
+            "active_engagement_rate": {"type": "number", "description": "활발한 참여 비율 (%)"}
+          }
+        },
+        "interaction_stats": {
+          "type": "object",
+          "properties": {
+            "child_utterance_ratio": {"type": "number", "description": "아동 발화 비율 (%)"},
+            "total_utterances": {"type": "integer"},
+            "avg_utterance_length_words": {"type": "number"},
+            "age_comparison": {"type": "string", "description": "또래 평균 대비"}
+          }
+        },
+        "voice_analysis": {
+          "description": "음성 분석 결과 포함",
+          "type": "object",
+          "properties": {
+            "speech_rate": {"type": "number", "description": "말하기 속도 (프레임/초)"},
+            "pitch_range": {"type": "number", "description": "음높이 변화폭 (Hz)"},
+            "energy_level": {"type": "string", "enum": ["낮음", "보통", "활발함", "매우 활발함"]},
+            "interpretation": {"type": "string", "description": "해석 (예: 활기차고 자신감 있는 목소리)"}
+          }
+        },
+        "primary_emotions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "주요 정서 키워드 (예: 호기심, 기쁨, 집중)"
+        }
+      },
+      "required": ["play_duration", "interaction_stats", "voice_analysis", "primary_emotions"]
+    },
+
+    "core_episodes": {
+      "description": "핵심 에피소드 3개 (언어/인지/사회정서 각 1개씩)",
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "episode_id": {"type": "string"},
+          "developmental_area": {
+            "type": "string",
+            "enum": ["언어발달", "인지발달", "사회정서발달"]
+          },
+          "title": {"type": "string", "description": "에피소드 제목 (1줄)"},
+          "time_range": {"type": "string", "description": "예: 10:30-12:45"},
+          "dialogue_excerpt": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "speaker": {"type": "string", "enum": ["child", "teacher"]},
+                "text": {"type": "string"}
+              }
+            },
+            "minItems": 3,
+            "maxItems": 6,
+            "description": "핵심 대화 3-6줄"
+          },
+          "narrative_description": {
+            "type": "string",
+            "description": "부모에게 전달할 이야기체 설명 (3-5문장)"
+          },
+          "developmental_significance": {
+            "type": "string",
+            "description": "발달적 의미 (2-3문장)"
+          }
+        },
+        "required": ["episode_id", "developmental_area", "title", "dialogue_excerpt", "narrative_description", "developmental_significance"]
+      }
+    },
+
+    "language_development": {
+      "description": "언어 발달 영역 분석",
+      "type": "object",
+      "properties": {
+        "summary_narrative": {
+          "type": "string",
+          "description": "5-6문장의 서술형 종합 설명"
+        },
+        "key_metrics": {
+          "type": "object",
+          "properties": {
+            "avg_utterance_length": {
+              "value": {"type": "number"},
+              "age_benchmark": {"type": "string"},
+              "assessment": {"type": "string"}
+            },
+            "sentence_complexity": {
+              "observed_types": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "예: 복문, 접속사, 수식어, 조건문"
+              },
+              "examples": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "구체적 발화 예시"
+              }
+            },
+            "vocabulary_range": {
+              "theme_words": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "주제별 어휘"
+              },
+              "examples": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            },
+            "grammar_usage": {
+              "features": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "예: 과거형, 미래형, 조건문"
+              },
+              "examples": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          }
+        },
+        "notable_utterances": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {"type": "string"},
+              "significance": {"type": "string"},
+              "linguistic_feature": {"type": "string"}
+            }
+          },
+          "minItems": 3,
+          "maxItems": 5,
+          "description": "인상적인 발화 3-5개"
+        }
+      },
+      "required": ["summary_narrative", "key_metrics", "notable_utterances"]
+    },
+
+    "cognitive_development": {
+      "description": "인지 발달 영역 분석",
+      "type": "object",
+      "properties": {
+        "summary_narrative": {
+          "type": "string",
+          "description": "5-6문장의 서술형 종합 설명"
+        },
+        "observed_skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "skill": {"type": "string", "description": "예: 수 개념, 규칙 이해, 문제 해결"},
+              "description": {"type": "string"},
+              "examples": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          }
+        }
+      },
+      "required": ["summary_narrative", "observed_skills"]
+    },
+
+    "social_emotional_development": {
+      "description": "사회정서 발달 영역 분석",
+      "type": "object",
+      "properties": {
+        "positive_aspects": {
+          "type": "string",
+          "description": "긍정적 모습 5-6문장 서술형"
+        },
+        "challenging_moments": {
+          "type": "string",
+          "description": "도전적 순간 1-2문장 서술형"
+        },
+        "observed_traits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "trait": {"type": "string", "description": "예: 협력, 공감, 배려"},
+              "examples": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          }
+        }
+      },
+      "required": ["positive_aspects", "challenging_moments", "observed_traits"]
+    },
+
+    "play_analysis": {
+      "description": "놀이 분석",
+      "type": "object",
+      "properties": {
+        "primary_themes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "theme": {"type": "string", "description": "예: 경찰놀이, 자동차 레이싱"},
+              "duration_minutes": {"type": "integer"},
+              "description": {"type": "string", "description": "주제별 놀이 설명 2-3문장"}
+            }
+          },
+          "description": "주요 주제별 놀이 정리"
+        },
+        "play_quality_ratings": {
+          "type": "object",
+          "properties": {
+            "engagement": {
+              "score": {"type": "integer", "minimum": 1, "maximum": 5},
+              "criteria": {"type": "string", "description": "평가 기준 설명"},
+              "evidence": {"type": "string", "description": "점수를 준 이유"}
+            },
+            "creativity": {
+              "score": {"type": "integer", "minimum": 1, "maximum": 5},
+              "criteria": {"type": "string"},
+              "evidence": {"type": "string"}
+            },
+            "cooperation": {
+              "score": {"type": "integer", "minimum": 1, "maximum": 5},
+              "criteria": {"type": "string"},
+              "evidence": {"type": "string"}
+            },
+            "persistence": {
+              "score": {"type": "integer", "minimum": 1, "maximum": 5},
+              "criteria": {"type": "string"},
+              "evidence": {"type": "string"}
+            }
+          },
+          "required": ["engagement", "creativity", "cooperation", "persistence"]
+        }
+      },
+      "required": ["primary_themes", "play_quality_ratings"]
+    },
+
+    "conversation_starters": {
+      "description": "부모가 아이와 나눌 수 있는 확장 질문 2개",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {"type": "string", "description": "질문 예시"},
+          "context": {"type": "string", "description": "이 질문이 연결되는 놀이 상황"},
+          "why_effective": {"type": "string", "description": "이 질문이 좋은 이유"}
+        },
+        "required": ["question", "context", "why_effective"]
+      }
+    }
+  }
+}
+
+
+
+

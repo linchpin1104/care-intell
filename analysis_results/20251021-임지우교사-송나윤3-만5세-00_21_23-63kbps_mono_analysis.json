@@ -1,0 +1,167 @@
+{
+  "meta_info": {
+    "teacher_name": "임지우",
+    "teacher_age": 21,
+    "teacher_gender": "여자",
+    "teacher_phone": "01037670993",
+    "child_name": "송나윤",
+    "child_age": 5,
+    "child_gender": "여자",
+    "audio_file_path": "/Users/rannrunn/내 드라이브/_MyData/케어인텔리전스/Data/PreProcessed/20251021-임지우교사-송나윤3-만5세-00_21_23-63kbps_48kHz_32bit_mono",
+    "processed_timestamp": "20251105_060020",
+    "model": "qwen3-omni-flash",
+    "session_name": "20251021-임지우교사-송나윤3-만5세-00_21_23-63kbps_mono"
+  },
+  "speech_ratio": {
+    "child_speech_ratio": 49.75247524752475,
+    "child_utterance_count": 201,
+    "teacher_utterance_count": 203,
+    "total_utterance_count": 404,
+    "child_words": 2486,
+    "teacher_words": 1668,
+    "total_words": 4154,
+    "child_word_ratio": 59.84593163216177
+  },
+  "child_speech_amount": {
+    "total_utterances": 201,
+    "total_characters": 2486,
+    "avg_utterance_length": 12.368159203980099,
+    "longest_utterance": 81,
+    "shortest_utterance": 2,
+    "utterance_length_std": 10.900173443323155
+  },
+  "emotion_analysis": {
+    "positive_count": 44,
+    "negative_count": 10,
+    "positive_ratio": 81.48148148148148,
+    "negative_ratio": 18.51851851851852,
+    "positive_keywords": [
+      "와",
+      "좋아",
+      "예쁘",
+      "하하",
+      "우와",
+      "괜찮",
+      "그래",
+      "네",
+      "응"
+    ],
+    "negative_keywords": [
+      "우",
+      "아니"
+    ],
+    "emotion_balance": "positive"
+  },
+  "topic_keywords": {
+    "top_keywords": [
+      [
+        "너무",
+        22
+      ],
+      [
+        "맘에",
+        20
+      ],
+      [
+        "들어",
+        20
+      ],
+      [
+        "제가",
+        12
+      ],
+      [
+        "조금",
+        10
+      ],
+      [
+        "그런데",
+        7
+      ],
+      [
+        "어때요",
+        7
+      ],
+      [
+        "있어요",
+        6
+      ],
+      [
+        "돼요",
+        5
+      ],
+      [
+        "없어요",
+        5
+      ],
+      [
+        "여기",
+        5
+      ],
+      [
+        "갔다",
+        5
+      ],
+      [
+        "바로",
+        4
+      ],
+      [
+        "괜찮아요",
+        4
+      ],
+      [
+        "우리",
+        4
+      ],
+      [
+        "노래",
+        4
+      ],
+      [
+        "선생님",
+        4
+      ],
+      [
+        "이거는",
+        4
+      ],
+      [
+        "예뻐요",
+        4
+      ],
+      [
+        "떡볶이",
+        3
+      ]
+    ],
+    "unique_words": 314,
+    "total_words": 522
+  },
+  "problem_solving": {
+    "problem_solving_count": 26,
+    "problem_solving_ratio": 12.935323383084576,
+    "examples": [
+      "이게 어떻게 해야 돼?",
+      "저 언니가 다시 찾아줄까요?",
+      "찾아서 다시 붙여줄까요?",
+      "보라색으로 여기 삼촌 미리 이렇게?",
+      "선생님 그거 하면서 조금 기다리고 있어 주세요."
+    ]
+  },
+  "topic_continuity": {
+    "avg_continuity": 0,
+    "continuity_std": 0,
+    "total_segments": 1,
+    "topic_changes": 0
+  },
+  "turn_taking": {
+    "total_turns": 341,
+    "child_turns": 171,
+    "teacher_turns": 170,
+    "avg_child_turn_length": 1.1754385964912282,
+    "avg_teacher_turn_length": 1.1941176470588235,
+    "turn_taking_balance": 0.501466275659824
+  },
+  "analyzed_at": "2025-11-14T17:40:40.135691"
+}

@@ -1,0 +1,164 @@
+{
+  "session_info": {
+    "date": "20251021",
+    "teacher_name": "임지우교사",
+    "child_name": "송나윤3",
+    "age": "만5세",
+    "duration": "00_21_23",
+    "session_name": "20251021-임지우교사-송나윤3-만5세-00_21_23-63kbps_mono"
+  },
+  "audio_features": {
+    "vad_ratio": 0.46636423604089855,
+    "snr": 16.569921493530273,
+    "clipping_ratio": 0.0,
+    "rms_mean": 0.038766078650951385,
+    "rms_var": 0.000687481602653861,
+    "low_band_energy": 18936416.0,
+    "mid_band_energy": 24982784.0,
+    "high_band_energy": 487526.71875,
+    "speech_rate_frames": 43.06807685034322,
+    "f0_mean": 233.22239765972162,
+    "f0_range": 1095.7605701549976,
+    "audio_file": "20251021-임지우교사-송나윤3-만5세-00_21_23-63kbps_48kHz_32bit_mono.m4a",
+    "timestamp": "20251105_173332",
+    "processing_time": 236.8214099407196
+  },
+  "speech_ratio": {
+    "child_utterance_count": 201,
+    "teacher_utterance_count": 203,
+    "total_utterance_count": 404,
+    "child_utterance_ratio": 49.75,
+    "child_text_length": 2486,
+    "teacher_text_length": 1668,
+    "child_text_ratio": 59.85,
+    "teacher": "임지우 선생님",
+    "child": "송나윤 아이"
+  },
+  "utterance_volume": {
+    "child_total_utterances": 201,
+    "child_total_sentences": 408,
+    "child_avg_utterance_length": 12.37,
+    "child_total_syllables": 1983,
+    "child_avg_utterance_per_minute": 14.93
+  },
+  "topic_consistency": {
+    "total_segments": 41,
+    "topic_changes": 36,
+    "topic_consistency_score": 12.2,
+    "main_keywords": [
+      "사러",
+      "떡볶이",
+      "나가야",
+      "돼요",
+      "오늘"
+    ]
+  },
+  "context_switches": {
+    "total_speaker_switches": 340,
+    "switch_rate": 84.16,
+    "avg_consecutive_utterances": 1.18,
+    "max_consecutive_utterances": 6
+  },
+  "problem_solving": {
+    "problem_solving_utterance_count": 12,
+    "problem_solving_ratio": 5.97,
+    "examples": [
+      "이게 어떻게 해야 돼?",
+      "저 언니가 다시 찾아줄까요?",
+      "찾아서 다시 붙여줄까요?",
+      "선생님 그거 하면서 조금 기다리고 있어 주세요.",
+      "저 검은색만 마저 색칠하면 돼요."
+    ]
+  },
+  "sentiment": {
+    "positive_count": 13,
+    "negative_count": 9,
+    "neutral_count": 179,
+    "positive_ratio": 6.47,
+    "negative_ratio": 4.48,
+    "sentiment_score": 1.99
+  },
+  "emotion_words": {
+    "emotion_counts": {
+      "기쁨": 2,
+      "슬픔": 0,
+      "화남": 3,
+      "놀람": 3,
+      "두려움": 0,
+      "사랑": 5
+    },
+    "emotion_examples": {
+      "기쁨": [
+        "지하고 힘이 좋아야 돼.",
+        "좋아."
+      ],
+      "슬픔": [],
+      "화남": [
+        "어, 영화관 가방인데 이 영화관 이름이 뭔지 내가 알려줄게요.",
+        "영화관 이름은 바로 끼끼이야. 끼끼에스 어학원."
+      ],
+      "놀람": [
+        "우와, 선생님도 엄청 잘한다.",
+        "우와, 빨간색. 빨간색으로 이거 솔솔솔.",
+        "우와, 선생님도 선생님도 벌써 다 꾸미고 있네?"
+      ],
+      "두려움": [],
+      "사랑": [
+        "어때요? 너무 귀여워. 어때요?",
+        "선생님, 일하는 게 샤워하는 게 더 예뻐요, 일하는 게 더 예뻐요.",
+        "샤워하는 것도 예뻐요."
+      ]
+    },
+    "dominant_emotion": "사랑"
+  },
+  "main_topics": {
+    "top_keywords": [
+      {
+        "word": "너무",
+        "count": 37
+      },
+      {
+        "word": "어때",
+        "count": 21
+      },
+      {
+        "word": "들어",
+        "count": 21
+      },
+      {
+        "word": "맘에",
+        "count": 20
+      },
+      {
+        "word": "예쁘다",
+        "count": 13
+      },
+      {
+        "word": "제가",
+        "count": 12
+      },
+      {
+        "word": "조금",
+        "count": 11
+      },
+      {
+        "word": "있어요",
+        "count": 9
+      },
+      {
+        "word": "맞아요",
+        "count": 9
+      },
+      {
+        "word": "그치",
+        "count": 8
+      }
+    ],
+    "detected_play_types": [
+      "역할놀이",
+      "미술놀이",
+      "게임놀이"
+    ],
+    "total_unique_words": 453
+  }
+}

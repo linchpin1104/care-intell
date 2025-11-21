@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "date": "20251021",
+    "teacher": "임지우",
+    "child": "송나윤3",
+    "age": "만5세",
+    "duration": "00_21_23"
+  },
+  "metrics": {
+    "child_utterance_ratio": 0.497907949790795,
+    "child_utterance_count": 357,
+    "teacher_utterance_count": 360,
+    "total_utterance_count": 717,
+    "child_word_count": 1303,
+    "teacher_word_count": 876,
+    "child_avg_words_per_utterance": 3.649859943977591,
+    "child_speaking_duration": 841.06,
+    "teacher_speaking_duration": 505.29999999999995,
+    "total_session_duration": 178.0,
+    "child_speaking_ratio": 4.72505617977528,
+    "topic_persistence": 3.642857142857143,
+    "context_switches": {
+      "total_switches": 67,
+      "switches_per_minute": 4020.0,
+      "topic_distribution": {
+        "기타": 643,
+        "일상": 14,
+        "가족": 10,
+        "감정": 14,
+        "질문": 40
+      }
+    },
+    "problem_solving_utterances": {
+      "child_count": 14,
+      "teacher_count": 12,
+      "child_examples": [
+        "이게 어떻게 해야 돼?",
+        "이게 어떻게 해야 돼?",
+        "저 언니가 다시 찾아줄까요?",
+        "저 언니가 다시 찾아줄까요?",
+        "찾아서 다시 붙여줄까요?"
+      ],
+      "teacher_examples": [
+        "나연이 선물 만들고 있어.",
+        "나연이 선물 만들고 있어.",
+        "동생이 떨어뜨린 거 다 어떻게 해야지.",
+        "동생이 떨어뜨린 거 다 어떻게 해야지.",
+        "왜? 왜 마음에 안 들어요?"
+      ]
+    },
+    "positive_utterances": 22,
+    "negative_utterances": 10,
+    "positive_negative_ratio": 2.2,
+    "emotion_keywords": {
+      "positive": [
+        [
+          "예쁘",
+          12
+        ],
+        [
+          "우와",
+          6
+        ],
+        [
+          "좋아",
+          4
+        ]
+      ],
+      "negative": [
+        [
+          "아니",
+          6
+        ],
+        [
+          "못",
+          4
+        ]
+      ]
+    },
+    "main_topics": [
+      [
+        "이렇게",
+        38
+      ],
+      [
+        "너무",
+        25
+      ],
+      [
+        "제가",
+        24
+      ],
+      [
+        "맘에",
+        21
+      ],
+      [
+        "들어",
+        21
+      ],
+      [
+        "조금",
+        20
+      ],
+      [
+        "그런데",
+        14
+      ],
+      [
+        "어때요",
+        14
+      ],
+      [
+        "있어요",
+        12
+      ],
+      [
+        "없어요",
+        10
+      ],
+      [
+        "돼요",
+        10
+      ],
+      [
+        "갔다",
+        10
+      ],
+      [
+        "바로",
+        8
+      ],
+      [
+        "이거는",
+        8
+      ],
+      [
+        "노래",
+        8
+      ],
+      [
+        "우리",
+        8
+      ],
+      [
+        "예뻐요",
+        8
+      ],
+      [
+        "괜찮아요",
+        7
+      ],
+      [
+        "떡볶이",
+        6
+      ],
+      [
+        "먹고",
+        6
+      ]
+    ],
+    "time_segments": [
+      {
+        "segment_number": 1,
+        "start_time": "00:00",
+        "end_time": "10:00",
+        "total_utterances": 717,
+        "child_utterances": 357,
+        "teacher_utterances": 360,
+        "child_ratio": 0.497907949790795
+      }
+    ]
+  },
+  "timestamp": "2025-11-14T18:45:54.953806"
+}

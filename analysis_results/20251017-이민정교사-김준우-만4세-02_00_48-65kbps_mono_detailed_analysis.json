@@ -1,0 +1,173 @@
+{
+  "session_info": {
+    "date": "20251017",
+    "teacher_name": "이민정교사",
+    "child_name": "김준우",
+    "age": "만4세",
+    "duration": "02_00_48",
+    "session_name": "20251017-이민정교사-김준우-만4세-02_00_48-65kbps_mono"
+  },
+  "audio_features": {
+    "vad_ratio": 0.5237726807175996,
+    "snr": 14.720934867858887,
+    "clipping_ratio": 0.0,
+    "rms_mean": 0.03464294597506523,
+    "rms_var": 0.0008744765073060989,
+    "low_band_energy": 25553374.0,
+    "mid_band_energy": 205358000.0,
+    "high_band_energy": 35863224.0,
+    "speech_rate_frames": 43.066669636984344,
+    "f0_mean": 345.6149612397955,
+    "f0_range": 2027.5981310796394,
+    "audio_file": "20251017-이민정교사-김준우-만4세-02_00_48-65kbps_48kHz_32bit_mono.m4a",
+    "timestamp": "20251105_163226",
+    "processing_time": 471.1345579624176
+  },
+  "speech_ratio": {
+    "child_utterance_count": 1813,
+    "teacher_utterance_count": 1484,
+    "total_utterance_count": 3297,
+    "child_utterance_ratio": 54.99,
+    "child_text_length": 31077,
+    "teacher_text_length": 22830,
+    "child_text_ratio": 57.65,
+    "teacher": "이민정 선생님",
+    "child": "김준우 아이"
+  },
+  "utterance_volume": {
+    "child_total_utterances": 1813,
+    "child_total_sentences": 2985,
+    "child_avg_utterance_length": 17.14,
+    "child_total_syllables": 25292,
+    "child_avg_utterance_per_minute": 16.5
+  },
+  "topic_consistency": {
+    "total_segments": 330,
+    "topic_changes": 302,
+    "topic_consistency_score": 8.48,
+    "main_keywords": [
+      "준우",
+      "이거",
+      "오늘",
+      "준우랑",
+      "우리"
+    ]
+  },
+  "context_switches": {
+    "total_speaker_switches": 2104,
+    "switch_rate": 63.82,
+    "avg_consecutive_utterances": 1.57,
+    "max_consecutive_utterances": 81
+  },
+  "problem_solving": {
+    "problem_solving_utterance_count": 62,
+    "problem_solving_ratio": 3.42,
+    "examples": [
+      "왜 안 나오지?",
+      "이렇게 하면 출동 출동.",
+      "어, 나중에 내가 할까?",
+      "어, 왜 허수아비가 왜 옷을 안 입고 있어?",
+      "근데 이거 왜 허수아비 왜 옷을 안 입고 있을까요?"
+    ]
+  },
+  "sentiment": {
+    "positive_count": 37,
+    "negative_count": 142,
+    "neutral_count": 1634,
+    "positive_ratio": 2.04,
+    "negative_ratio": 7.83,
+    "sentiment_score": -5.79
+  },
+  "emotion_words": {
+    "emotion_counts": {
+      "기쁨": 30,
+      "슬픔": 1,
+      "화남": 10,
+      "놀람": 30,
+      "두려움": 3,
+      "사랑": 4
+    },
+    "emotion_examples": {
+      "기쁨": [
+        "난 검은색이 좋아.",
+        "난 검은색이 안 추워 검은색이 제일 좋아.",
+        "웃고 있는 거."
+      ],
+      "슬픔": [
+        "얘 슬프게도."
+      ],
+      "화남": [
+        "싫어!",
+        "싫어!",
+        "싫어!"
+      ],
+      "놀람": [
+        "선생님 신기해.",
+        "우와, 주누 괴물이랑 유령 하나도 안 무서워?",
+        "우와, 그렇구나."
+      ],
+      "두려움": [
+        "우와, 주누 괴물이랑 유령 하나도 안 무서워?",
+        "선생님은 조금 무서워.",
+        "선생님 사실 한 번도 본 적은 없지만, 만약에 보면 무서울 것 같아."
+      ],
+      "사랑": [
+        "예뻐.",
+        "예뻐라.",
+        "예뻐."
+      ]
+    },
+    "dominant_emotion": "기쁨"
+  },
+  "main_topics": {
+    "top_keywords": [
+      {
+        "word": "이이이이",
+        "count": 729
+      },
+      {
+        "word": "콜콜",
+        "count": 689
+      },
+      {
+        "word": "왜왜왜왜",
+        "count": 653
+      },
+      {
+        "word": "루루루루",
+        "count": 648
+      },
+      {
+        "word": "징징징징",
+        "count": 503
+      },
+      {
+        "word": "히히히히",
+        "count": 202
+      },
+      {
+        "word": "주사기",
+        "count": 95
+      },
+      {
+        "word": "진짜",
+        "count": 84
+      },
+      {
+        "word": "준우",
+        "count": 83
+      },
+      {
+        "word": "준우가",
+        "count": 70
+      }
+    ],
+    "detected_play_types": [
+      "역할놀이",
+      "구성놀이",
+      "미술놀이",
+      "게임놀이"
+    ],
+    "total_unique_words": 2159
+  }
+}
