@@ -26,11 +26,11 @@ body {
 
 .page-header {
   text-align: center;
-  margin-bottom: 48px;
-  padding: 40px 32px;
+  margin-bottom: 32px;
+  padding: 20px 24px;
   background: linear-gradient(135deg, #FFE500 0%, #FFD700 100%);
-  border-radius: 32px;
-  box-shadow: 0 20px 60px rgba(255, 229, 0, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 229, 0, 0.2);
   position: relative;
   overflow: hidden;
 }
@@ -40,49 +40,49 @@ body {
   position: absolute;
   top: -50%;
   right: -10%;
-  width: 300px;
-  height: 300px;
-  background: rgba(255, 255, 255, 0.2);
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
 }
 
 .logo-container {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .logo {
-  height: 140px;
+  height: 70px;
   width: auto;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.1));
 }
 
 .page-title {
-  font-size: 42px;
+  font-size: 21px;
   font-weight: 900;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   color: #2D2D2D;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .page-subtitle {
-  font-size: 18px;
+  font-size: 13px;
   color: #4A4A4A;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
   .page-header {
-    padding: 24px 20px;
-    margin-bottom: 32px;
-    border-radius: 20px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    border-radius: 16px;
   }
   
   .page-title {
-    font-size: 28px;
+    font-size: 18px;
   }
   
   .page-subtitle {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
