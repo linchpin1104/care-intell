@@ -110,7 +110,7 @@ body {
 }
 
 .teacher-card .card-logo {
-  background: linear-gradient(135deg, #87CEEB 0%, #5DADE2 100%);
+  background: linear-gradient(135deg, #54D6ED 0%, #3AC5E0 100%);
 }
 
 .card-logo-img {
@@ -135,8 +135,8 @@ body {
 }
 
 .teacher-card .card-main-title {
-  background: linear-gradient(135deg, #87CEEB 0%, #5DADE2 100%);
-  border-bottom: 4px solid #5DADE2;
+  background: linear-gradient(135deg, #54D6ED 0%, #3AC5E0 100%);
+  border-bottom: 4px solid #3AC5E0;
 }
 
 @media (max-width: 768px) {
@@ -200,7 +200,7 @@ body {
   left: 0;
   right: 0;
   height: 8px;
-  background: linear-gradient(90deg, #87CEEB 0%, #5DADE2 100%);
+  background: linear-gradient(90deg, #54D6ED 0%, #3AC5E0 100%);
 }
 
 .report-card.parent-card:hover {
@@ -210,7 +210,7 @@ body {
 
 .report-card.teacher-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 28px 80px rgba(135, 206, 235, 0.2);
+  box-shadow: 0 28px 80px rgba(84, 214, 237, 0.2);
 }
 
 
@@ -227,7 +227,7 @@ body {
 }
 
 .teacher-card .report-header {
-  border-bottom: 3px solid #87CEEB;
+  border-bottom: 3px solid #54D6ED;
 }
 
 @media (max-width: 768px) {
@@ -285,9 +285,9 @@ body {
 }
 
 .teacher-card .report-badge {
-  background: linear-gradient(135deg, #87CEEB 0%, #5DADE2 100%);
-  box-shadow: 0 4px 12px rgba(135, 206, 235, 0.4);
-  border: 2px solid #5DADE2;
+  background: linear-gradient(135deg, #54D6ED 0%, #3AC5E0 100%);
+  box-shadow: 0 4px 12px rgba(84, 214, 237, 0.4);
+  border: 2px solid #3AC5E0;
 }
 
 @media (max-width: 768px) {
@@ -457,8 +457,8 @@ body {
 }
 
 .teacher-card .episode-quote {
-  border-left: 4px solid #87CEEB;
-  background: linear-gradient(90deg, rgba(135, 206, 235, 0.1) 0%, transparent 100%);
+  border-left: 4px solid #54D6ED;
+  background: linear-gradient(90deg, rgba(84, 214, 237, 0.1) 0%, transparent 100%);
 }
 
 .episode-body {
@@ -674,12 +674,12 @@ body {
 .teacher-card .question-list li {
   margin-bottom: 14px;
   padding: 16px 20px;
-  background: linear-gradient(135deg, #F0F8FF 0%, #E6F7FF 100%);
+  background: linear-gradient(135deg, #F0FEFF 0%, #E0FAFF 100%);
   border-radius: 12px;
-  border-left: 5px solid #87CEEB;
+  border-left: 5px solid #54D6ED;
   line-height: 1.7;
   color: #475569;
-  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.15);
+  box-shadow: 0 2px 8px rgba(84, 214, 237, 0.15);
 }
 
 @media (max-width: 768px) {
