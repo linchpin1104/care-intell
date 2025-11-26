@@ -1,65 +1,228 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>째깍악어 놀이 레포트</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Pretendard', system-ui, -apple-system, sans-serif;
-      background: linear-gradient(180deg, #FFF9E6 0%, #FFFBF0 100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .container {
-      text-align: center;
-      padding: 40px;
-    }
-    .logo {
-      width: 200px;
-      margin-bottom: 30px;
-      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
-    }
-    h1 {
-      font-size: 42px;
-      font-weight: 900;
-      color: #2D2D2D;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      color: #666;
-      margin-bottom: 40px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 16px 40px;
-      background: linear-gradient(135deg, #FFE500 0%, #FFD700 100%);
-      color: #2D2D2D;
-      font-size: 18px;
-      font-weight: 800;
-      text-decoration: none;
-      border-radius: 50px;
-      box-shadow: 0 8px 20px rgba(255, 229, 0, 0.4);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(255, 229, 0, 0.5);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>째깍악어 놀이 리포트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        /* 모달 스타일 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.4s ease;
+            position: relative;
+        }
+
+        .modal-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .modal-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .modal-message {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .modal-close-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .logo {
+                width: 150px;
+            }
+
+            .modal-content {
+                margin: 20% auto;
+                padding: 30px 20px;
+                max-width: 90%;
+            }
+
+            .modal-title {
+                font-size: 1.5rem;
+            }
+
+            .modal-message {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="./째깍악어-로고.png" alt="째깍악어" class="logo">
-    <h1>놀이 리포트 시스템</h1>
-    <p>AI 기반 아동 놀이 분석 및 보고서 생성</p>
-    <a href="./report_preview.html" class="btn">샘플 리포트 보기 🐊</a>
-  </div>
+    <div class="container">
+        <img src="째깍악어-로고.png" alt="째깍악어 로고" class="logo">
+        <h1>놀이 리포트 시스템</h1>
+        <p>AI 기반 놀이 상호작용 분석 서비스</p>
+        <button class="btn" onclick="showModal()">샘플 리포트 보기</button>
+    </div>
+
+    <!-- 모달 -->
+    <div id="expiredModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">🔒</div>
+            <h2 class="modal-title">공개 기한이 지났습니다</h2>
+            <p class="modal-message">
+                샘플 리포트의 공개 기한이 만료되었습니다.<br>
+                자세한 내용은 관리자에게 문의해주세요.
+            </p>
+            <button class="modal-close-btn" onclick="closeModal()">확인</button>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            document.getElementById('expiredModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('expiredModal').style.display = 'none';
+        }
+
+        // 모달 외부 클릭 시 닫기
+        window.onclick = function(event) {
+            const modal = document.getElementById('expiredModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // ESC 키로 모달 닫기
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
 
